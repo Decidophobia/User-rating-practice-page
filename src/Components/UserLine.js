@@ -7,11 +7,14 @@ function UserLine({ user }) {
   return (
     <>
       <div className="user_line" onClick={() => setModalShow(true)}>
-        <div className="user_line__name">{user.name}</div>
-        <div className="user_line__description">{user.description}</div>
         <div className="user_line__img">
           <img src={user.avatar} />
         </div>
+        <div className="user_line__name">
+          <div className="user_line__name--label">Пользователь:</div>
+          <div className="user_line__name--text">{user.name}</div>
+        </div>
+
         <div className="user_line__rating">
           <div className="user_line__rating-icon">
             <StarIcon />
@@ -19,7 +22,11 @@ function UserLine({ user }) {
           <div className="user_line__rating-text">{user.rating}</div>
         </div>
       </div>
-      <ModalWindow show={modalShow} onHide={() => setModalShow(false)} user = {user} />
+      <ModalWindow
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        user={user}
+      />
     </>
   );
 }

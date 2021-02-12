@@ -13,11 +13,11 @@ function SortIcon(props) {
     }
   }
   return (
-    <div>
+    <div className="sort-button">
       <svg
         onClick={() => sortUser()}
-        width="19"
-        height="12"
+        width="22"
+        height="22"
         viewBox="0 0 19 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

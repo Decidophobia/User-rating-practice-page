@@ -1,15 +1,65 @@
-
 /* modal window styling */
 img {
   border-radius: 50%;
+  width: 100%;
 }
+
+.App {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.App .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.App .header h1 {
+  margin: 0;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.App .header .sort-button {
+  border: 1px solid rgba(44, 62, 80, 0.67);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.user_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 14px;
+  margin-top: 36px;
+}
+
+.user_line__img{
+  width: 60px;
+}
+.user_line__name {
+  flex-grow: 1;
+  margin-left: 16px;
+ }
+
+ .user_line__rating{
+   display: flex;
+   align-items: center;
+ }
+ .user_line__rating-text{
+   margin-left: 14px;
+   font-size: 18px;
+   padding-top: 3px;
+ }
 
 #contained-modal-title-vcenter {
   font-size: 24px;
   line-height: 18px;
-}
-
-.user_modal {
 }
 
 .user_modal__wrapper {
@@ -20,22 +70,18 @@ img {
 .user_modal__labels {
   margin-left: 37px;
 }
-.user_modal__labels--label {
-  font-weight: 400;
-  font-size: 18px;
-}
-.user_modal__labels--text {
-  font-weight: 400;
-  font-size: 16px;
-}
 
 .user_modal__description {
   padding: 0px 13px;
 }
+
+.user_modal__labels--label,
 .user_modal__description--label {
   font-weight: 400;
   font-size: 18px;
 }
+
+.user_modal__labels--text,
 .user_modal__description-text {
   font-weight: 400;
   font-size: 16px;
