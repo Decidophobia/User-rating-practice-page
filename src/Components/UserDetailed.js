@@ -1,12 +1,12 @@
 import React from 'react';
 
-function UserDetailed({ user }) {
-  console.log(user.avatar);
+function UserDetailed({ user, borderColor }) {
+  
   return (
     <div className="user_modal">
       <div className="user_modal__wrapper">
-        <div className="user_modal__img">
-          <img src={user.avatar} />
+        <div className="user_modal__img" >
+          <img src={user.avatar} style={{borderColor: borderColor}}/>
         </div>
         <div className="user_modal__labels">
           <div className="user_modal__labels-name">

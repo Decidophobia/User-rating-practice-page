@@ -1,6 +1,6 @@
 import { GET_USER, SORT_USER, ADD_RATING_LIST } from './actionTypes';
 
-export function reducer(state = { users: [], sort: "asc" }, action) {
+export function reducer(state = { users: [], sort: 'asc' }, action) {
   switch (action.type) {
     case GET_USER:
       return { ...state, users: action.payload };

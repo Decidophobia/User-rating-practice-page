@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import UserDetailed from './UserDetailed';
 
-function ModalWindow({ show, onHide, user }) {
+function ModalWindow({ show, onHide, user, borderColor }) {
   const option = {
     onHide,
     show,
   };
-  console.log(option);
+  console.log(borderColor);
   return (
     <>
       <Modal
@@ -22,7 +22,7 @@ function ModalWindow({ show, onHide, user }) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <UserDetailed user={user} />
+          <UserDetailed user={user} borderColor={borderColor}/>
         </Modal.Body>
       </Modal>
     </>

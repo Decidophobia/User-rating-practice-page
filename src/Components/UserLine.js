@@ -4,11 +4,25 @@ import ModalWindow from './ModalWindow';
 
 function UserLine({ user }) {
   const [modalShow, setModalShow] = useState(false);
+
+  function getBorderColor() {
+    switch (user.ratingPosition) {
+      case 1:
+        return '#fdd836';
+      case 2:
+        return '#90a4ae';
+      case 3:
+        return '#795548';
+      default:
+        return '#ffffff';
+    }
+  }
+
   return (
     <>
       <div className="user_line" onClick={() => setModalShow(true)}>
         <div className="user_line__img">
-          <img src={user.avatar} />
+          <img src={user.avatar} style={{ borderColor: getBorderColor() }} />
         </div>
         <div className="user_line__name">
           <div className="user_line__name--label">Пользователь:</div>
@@ -26,6 +40,7 @@ function UserLine({ user }) {
         show={modalShow}
         onHide={() => setModalShow(false)}
         user={user}
+        borderColor={getBorderColor()}
       />
     </>
   );
