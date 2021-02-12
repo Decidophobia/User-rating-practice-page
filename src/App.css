@@ -1,6 +1,42 @@
-/* .user_line:first-child {
-  background: red;
+
+/* modal window styling */
+img {
+  border-radius: 50%;
 }
-.user_line:nth-child(2) {
-  background: blue;
-} */
+
+#contained-modal-title-vcenter {
+  font-size: 24px;
+  line-height: 18px;
+}
+
+.user_modal {
+}
+
+.user_modal__wrapper {
+  display: flex;
+  padding: 0px 13px;
+}
+
+.user_modal__labels {
+  margin-left: 37px;
+}
+.user_modal__labels--label {
+  font-weight: 400;
+  font-size: 18px;
+}
+.user_modal__labels--text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.user_modal__description {
+  padding: 0px 13px;
+}
+.user_modal__description--label {
+  font-weight: 400;
+  font-size: 18px;
+}
+.user_modal__description-text {
+  font-weight: 400;
+  font-size: 16px;
+}

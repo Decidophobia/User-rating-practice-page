@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import UserDetailed from './UserDetailed';
 
 function ModalWindow({ show, onHide, user }) {
   const option = {
-    show,
     onHide,
+    show,
   };
+  console.log(option);
   return (
     <>
       <Modal
@@ -17,7 +18,7 @@ function ModalWindow({ show, onHide, user }) {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            Профиль пользователя:
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
